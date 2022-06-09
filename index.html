@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adivina la palabra</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+
+</head>
+<body>
+
+	<!--Creamos el contenido de la página-->
+	<center>
+		<h1>Juego</h1>
+		<!--Agregamos un div para mostrar la sesión del jugador-->
+		<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+			<!--la clase de este div es: login_div1-->
+			<h3> Jugador 1</h3>
+			<label>Nombre del usuario: </label>
+			<input type="text" id="jugador1" class="form-control" placeholder="Nombre del jugador">
+			<br>
+		</div>
+		<br>
+		
+		<!--Duplicamos el contenido para el segundo jugador-->
+		<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+			<!--cambiamos la clase de este div a: login_div2-->
+			<!--Cambiamos al jugador 2-->
+			<h3> Jugador 2</h3>
+			<label>Nombre del usuario: </label>
+			<!--cambiamos el id para el input -->
+			<input type="text" id="jugador2" class="form-control" placeholder="Nombre del jugador">
+			<br>
+		</div>
+		<br>
+
+
+
+
+
+
+
+		<!--C90-->
+		<!--Agregamos el botón para poder iniciar el juego-->
+		<!--Agregamos el evento ONCLICK con una funcion-->
+		<button style="width: 30%" class="btn btn-primary" onclick="agregarU()">Iniciar sesión</button>
+		<!--Pasamos al archivo js para el contenido de la funcion-->
+	</center>
+	<script src="game_login.js"></script>
+</body>
+</html>

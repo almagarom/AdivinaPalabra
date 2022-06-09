@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adivina la palabra</title>
+<!--continuacion-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+	<!--PASO 2 -->
+	<!--NEcesitamos crear etiquetas donde se mostrarán los nombres y las puntuaciones-->
+	<!--creamos el h4 para el nombre del jugador-->
+	<!--creamos un span para la puntuacion-->
+	<h4 id="player1_name"></h4> <span id="player1_score"></span>
+	<br>
+	<h4 id="player2_name"></h4> <span id="player2_score"></span>
+
+
+	<div class="container">
+		<center>
+			<!--PASO 1111111-->
+			<!--esto ya estará desde el inicio-->
+			<h2 style="color: white;">Adivina la palabra</h2>
+			
+
+			<!--PASO 3-->
+			<!--para colocar el nombre del jugador que le toca preguntar-->
+			<h3 id="player_question"></h3>
+			<!--Para el nombre de quien le toca responder-->
+			<h3 id="player_answer"></h3>
+			<!--colocamos un div que será donde se muestre la pregunta de la palabra-->
+			<div id="output" class="col-lg-6"> </div>
+			<br>
+			<br> 
+			<!--Esto tambien ya está-->
+			<label>Escribe tu palabra: <b style="color: red">Escribe una palabra de 5 o más letras
+			</b>
+			</label>
+
+			<!--PASO 4-->
+			<!--colocamos un text input para que el jugador que pregunta-->
+			<!--pueda escribir la pregunta a adivinar-->
+			<input type="text" id="word" class="form-control" placeholder="Palabra">
+			<br>
+			<!--Agregamos el botón para enviar la palabra-->
+			<button onclick="send()" class="btn btn-success" style="width: 30%;">Enviar</button>
+		</center>
+	</div>
+	<!--tambien ya está-->
+	<script src="game_page.js"></script>
+</body>
+</html>
